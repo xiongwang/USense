@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=USense
+Exec=/usr/local/bin/USense
+Icon=/usr/share/icons/USense.png
+Type=Application
+Terminal=false
+StartupNotify=true

@@ -1,0 +1,4 @@
+p { clear: both; padding-bottom: 2em; }
+form { margin-top: 2em; }
+form p .btn { margin-right: 1em; }
+textarea { margin: 1em 0;}

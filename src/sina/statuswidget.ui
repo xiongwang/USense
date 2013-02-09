@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StatusWidget</class>
+ <widget class="QWidget" name="StatusWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/WithU.png</normaloff>:/images/WithU.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTextEdit" name="textEdit_Statuscontent">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>59</y>
+     <width>520</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Wordscount">
+   <property name="geometry">
+    <rect>
+     <x>436</x>
+     <y>120</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_Mention">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Resource.qrc">
+     <normaloff>:/images/sina/at.png</normaloff>:/images/sina/at.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_AddPic">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>170</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Resource.qrc">
+     <normaloff>:/images/sina/addpic.png</normaloff>:/images/sina/addpic.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_AddTopic">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>170</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Resource.qrc">
+     <normaloff>:/images/sina/addtopic.png</normaloff>:/images/sina/addtopic.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_Emotion">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>170</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Resource.qrc">
+     <normaloff>:/images/sina/emotion.png</normaloff>:/images/sina/emotion.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_Cancel">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>110</y>
+     <width>71</width>
+     <height>56</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Resource.qrc">
+     <normaloff>:/images/sina/cancel.png</normaloff>:/images/sina/cancel.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>70</width>
+     <height>70</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_Send">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>50</y>
+     <width>71</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../Resource.qrc">
+     <normaloff>:/images/sina/ok.png</normaloff>:/images/sina/ok.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>70</width>
+     <height>70</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_ShowPic">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>160</y>
+     <width>231</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_Pic">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Picture</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_CancelPic">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../../Resource.qrc">
+      <normaloff>:/images/sina/back.png</normaloff>:/images/sina/back.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_Emotions">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>240</y>
+     <width>611</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>表情</string>
+   </property>
+   <widget class="QListWidget" name="listWidget_Emotions">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>251</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>默认</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>心情</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>爱心</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>休闲</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>搞怪</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>管不着</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>大耳兔</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>哈皮兔</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>天气</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>星座</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>小新小浪</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>亚运会</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>张小盒</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>悠嘻猴</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>蘑菇点点</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>阿狸</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWebView" name="webView_Emotions">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>19</y>
+      <width>301</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>about:blank</string>
+     </url>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../../Resource.qrc">:/images/sina/发表微博.jpg</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="title_label">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>10</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#title_label
+{
+	color:rgb(255, 255, 255);
+	font-size:20px;
+	font-family:&quot;微软雅黑&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../Resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
